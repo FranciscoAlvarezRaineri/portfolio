@@ -6,8 +6,8 @@
 
 # Deploy @
 
-[![image](https://farportfolio.netlify.app/)
+<a href="https://farportfolio.netlify.app/" target="_blank"> Portfolio </a>
 
-## Based on
+## Design by
 
-[![image](https://nextly.web3templates.com/)
+<a href="https://nextly.web3templates.com" target="_blank"> Nextly </a>
