@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+  }
+}
+
+.clearNav {
+  backdrop-filter: saturate(180%) blur(5px) !important;
+  background-color: rgba(0, 0, 0, 0.71) !important;
+}
