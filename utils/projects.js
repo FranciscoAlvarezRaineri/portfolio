@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "Figurita Repetida",
-    subTitle: "Full Stack group educational project. E-Commerce",
+    subTitle: "Full Stack group educational project. E-Commerce.",
     content: null,
     funcs: [
       "Create and log-in users and admins with session persistance.",

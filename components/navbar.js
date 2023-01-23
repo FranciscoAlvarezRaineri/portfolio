@@ -57,7 +57,10 @@ export default function Navbar() {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
-              <li className="mr-3 nav__item" key={index}>
+              <li
+                className="mr-3 nav__item shadow-sm shadow-gray-400"
+                key={index}
+              >
                 <Link href={`#${menu}`}>
                   <a className="inline-block px-4 py-2 text-lg font-normal no-underline rounded-md text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:outline-none bg-gray-800">
                     {menu}

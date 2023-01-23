@@ -9,6 +9,7 @@ import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+import ContactForm from "../components/contactForm";
 
 import projects from "../utils/projects";
 
@@ -30,9 +31,10 @@ export default function Home() {
       <br></br>
       <Hero />
       <div id="Projects">
-        <SectionTitle title="Projects">
-          This are my past and present projects.
-        </SectionTitle>
+        <SectionTitle
+          title="Projects"
+          subtitle="Past and present projects."
+        ></SectionTitle>
         {projects.map((project, index) => (
           <Project
             key={index}
@@ -41,30 +43,34 @@ export default function Home() {
           />
         ))}
       </div>
-      <SectionTitle
-        pretitle="Watch a video"
-        title="Learn how to fullfil your needs"
-      >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don't forget to add one. Just like this.
-      </SectionTitle>
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said"
-      >
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
-      <Cta />
+      <div id="Education">
+        <SectionTitle
+          subtitle="Courses and degrees"
+          title="Education"
+        ></SectionTitle>
+        <Testimonials />
+      </div>
+      <div id="About me">
+        <SectionTitle subtitle="how I ended up here" title="About me">
+          After a decade of part-time and temporary jobs, I felt the need to
+          settle down and follow the path of a professional career. <br />
+          Programming came as the obvious choice. The subject caught my
+          attention back in high-school because problem solving is my passion
+          and writing comes as a natural way to achieve it.
+          <br /> Having graduated from an +800hs intensive bootcamp, I’m eager
+          to join a team and start adding value.
+          <br /> Meanwhile, there are plenty of problems to work on and tools to
+          learn.
+        </SectionTitle>
+      </div>
+      <div id="Contact">
+        <SectionTitle
+          subtitle="Let's get in touch"
+          title="Contact"
+        ></SectionTitle>
+        <ContactForm />
+      </div>
       <Footer />
-      <PopupWidget />
     </>
   );
 }

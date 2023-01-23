@@ -57,14 +57,14 @@ export default function Hero() {
         </div>
       </Container>
       <Container>
-        <div className="h-24 flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around rounded-3xl shadow-lg shadow-gray-600">
+        <div className="h-24 flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around rounded-3xl shadow-lg dark:bg-gray-900 shadow-gray-500">
           {tools.map((tool, index) => (
             <img
               key={index}
               alt={tool.alt}
               width="48px"
               src={tool.src}
-              className={`${tool.className} drop-shadow-xl`}
+              className={`${tool.className}`}
             />
           ))}
         </div>
