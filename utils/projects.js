@@ -1,5 +1,21 @@
 const projects = [
   {
+    title: "The Movie DataBase",
+    subTitle: "Personal Full-Stack WIP.",
+    content: null,
+    funcs: ["Create and log-in users.", "Search for movies and shows."],
+    imgs: "/imgs/tmdb/TMDB.png",
+    imgAlt: "TMDB",
+    does: [
+      "Build a front-end with React and MaterialUI.",
+      "Interact with an API.",
+      "Set-up a Firebase project.",
+      "Use Firebase Authentication and Firestore Database.",
+    ],
+    live: "https://tmdbnavigator.netlify.app",
+    repo: "https://github.com/FranciscoAlvarezRaineri/TMDB",
+  },
+  {
     title: "Formidable",
     subTitle: "Forms creation and management App.",
     content: null,
@@ -12,7 +28,7 @@ const projects = [
     ],
     imgs: "/imgs/formidable/1.png",
     imgAlt: "Formidable",
-    tools: [
+    does: [
       "Reverse-engineer a complex module and build upon it's functionality.",
       "Build a Front-End with Next.js and Material.UI.",
       "Choose Server-side rendering vs Client-side rendering.",
@@ -24,7 +40,7 @@ const projects = [
   },
   {
     title: "Figurita Repetida",
-    subTitle: "Full Stack group eduicational E-Commerce",
+    subTitle: "Full Stack group educational project. E-Commerce",
     content: null,
     funcs: [
       "Create and log-in users and admins with session persistance.",
@@ -32,9 +48,9 @@ const projects = [
       "Add and remove items to and from a cart.",
       "Manage a list of favourites and previous purchases.",
     ],
-    imgs: "/imgs//fr/1.png",
+    imgs: "/imgs/fr/1.png",
     imgAlt: "Figurita Repetida",
-    tools: [
+    does: [
       "Build a back-end with Express.js and Sequelize.",
       "User authentication and persistance.",
       "Set-up a PostreSQL DB.",
@@ -43,22 +59,6 @@ const projects = [
     ],
     live: null,
     repo: "https://github.com/FranciscoAlvarezRaineri/FiguritaRepetida",
-  },
-  {
-    title: "The Movie DataBase",
-    subTitle: "Personal Full-Stack WIP.",
-    content: null,
-    funcs: ["Create and log-in users.", "Search for movies and shows."],
-    imgs: "/imgs/tmdb/TMDB.png",
-    imgAlt: "TMDB",
-    tools: [
-      "Build a front-end with React and Material.UI.",
-      "Interact with an API.",
-      "Set-up a Firebase project.",
-      "Use Firebase Authentication and Firestore Database.",
-    ],
-    live: "https://tmdbnavigator.netlify.app",
-    repo: "https://github.com/FranciscoAlvarezRaineri/TMDB",
   },
   {
     title: "Minesweeper",
@@ -73,7 +73,7 @@ const projects = [
     ],
     imgs: "/imgs/buscaminas/buscaminas.jpg",
     imgAlt: "Minesweeper",
-    tools: [
+    does: [
       "Code a relatively complex JavaScript app.",
       "The joy of going from cero to hero",
     ],
@@ -90,7 +90,7 @@ const projects = [
     ],
     imgs: "/imgs/wc/WC.jpg",
     imgAlt: "The Weather Channel",
-    tools: ["Combine JavaScript, HTML and CSS.", "Interact with an API."],
+    does: ["Combine JavaScript, HTML and CSS.", "Interact with an API."],
     live: "https://elcanaldelclima.netlify.app/",
     repo: null,
   },
@@ -104,7 +104,7 @@ const projects = [
     ],
     imgs: "/imgs/todolist/Todolist.jpg",
     imgAlt: "To Do List",
-    tools: [
+    does: [
       "Create and edit HTML components with JavaScript.",
       "Assigne and modify CSS styles with JavaScript",
     ],
@@ -121,7 +121,7 @@ const projects = [
     ],
     imgs: "/imgs/colorsgame/colorsgame.jpg",
     imgAlt: "Color Guessing Game",
-    tools: [
+    does: [
       "Code randomly generated numbers with changing constraints in JavaScript.",
       "Event handlers and alert messasges.",
     ],

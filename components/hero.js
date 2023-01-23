@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Container from "./container";
-import heroImg from "../public/Retrato low.png";
+
+import tools from "../utils/tools";
 
 export default function Hero() {
   return (
@@ -44,73 +45,28 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/3">
-          <div className="">
-            <Image
-              src={heroImg}
-              width="616"
-              height="617"
-              alt="Hero Illustration"
-              layout="intrinsic"
-              loading="eager"
-              placeholder="blur"
-            />
-          </div>
+        <div className="flex items-center justify-center w-full lg:w-1/3 max-w-md">
+          <img
+            src="/Retrato low.jpg"
+            alt="Hero"
+            layout="intrinsic"
+            loading="eager"
+            placeholder="blur"
+            className="rounded-full shadow-lg shadow-gray-600"
+          ></img>
         </div>
       </Container>
       <Container>
-        <div className="flex flex-col justify-center">
-          <div className="flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around">
+        <div className="h-24 flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around rounded-3xl shadow-lg shadow-gray-600">
+          {tools.map((tool, index) => (
             <img
-              align="left"
-              alt="JavaScript"
+              key={index}
+              alt={tool.alt}
               width="48px"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+              src={tool.src}
+              className={`${tool.className} drop-shadow-xl`}
             />
-            <img
-              align="left"
-              alt="NodeJS"
-              width="48px"
-              src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-            />
-            <img
-              className="dark:invert"
-              align="left"
-              alt="NextJS"
-              width="48px"
-              src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg"
-            />
-            <img
-              align="left"
-              alt="React"
-              width="48px"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-            />
-            <img
-              align="left"
-              alt="Redux"
-              width="48px"
-              src="https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55"
-            />
-            <img
-              align="left"
-              alt="Git"
-              width="48px"
-              src="https://avatars.githubusercontent.com/u/18133?s=200&v=4"
-            />
-            <img
-              align="left"
-              alt="GitHub"
-              width="48px"
-              src="https://icones.pro/wp-content/uploads/2021/06/icone-github-orange.png"
-            />
-            <img
-              align="left"
-              alt="Linux"
-              width="48px"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
-            />
-          </div>
+          ))}
         </div>
       </Container>
     </>

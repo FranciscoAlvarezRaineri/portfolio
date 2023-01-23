@@ -3,13 +3,14 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 
-import { benefitOne, benefitTwo } from "../components/data";
-import Benefits from "../components/benefits";
+import Project from "../components/project";
 import Footer from "../components/footer";
 import Testimonials from "../components/testimonials";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
+
+import projects from "../utils/projects";
 
 export default function Home() {
   return (
@@ -30,12 +31,15 @@ export default function Home() {
       <Hero />
       <div id="Projects">
         <SectionTitle title="Projects">
-          Nextly is a free landing page & marketing website template for
-          startups and indie projects. Its built with Next.js & TailwindCSS. And
-          its completely open-source.
+          This are my past and present projects.
         </SectionTitle>
-        <Benefits data={benefitOne} />
-        <Benefits imgPos="right" data={benefitTwo} />
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            project={project}
+            side={index % 2 ? "right" : "left"}
+          />
+        ))}
       </div>
       <SectionTitle
         pretitle="Watch a video"
