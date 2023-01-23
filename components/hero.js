@@ -6,7 +6,7 @@ import tools from "../utils/tools";
 export default function Hero() {
   return (
     <>
-      <Container className="flex flex-wrap bg-color-gray-200">
+      <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-2/3">
           <div className="max-w-3xl mb-8">
             <h1 className="text-4xl font-bold text-gray-600 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-gray-200">
@@ -57,14 +57,14 @@ export default function Hero() {
         </div>
       </Container>
       <Container>
-        <div className="h-24 flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around rounded-3xl shadow-lg dark:bg-gray-900 shadow-gray-500">
+        <div className="flex flex-wrap justify-center content-center gap-5 mt-10 md:justify-around rounded-3xl shadow-lg dark:bg-neutral-800 shadow-neutral-500">
           {tools.map((tool, index) => (
             <img
               key={index}
               alt={tool.alt}
               width="48px"
               src={tool.src}
-              className={`${tool.className}`}
+              className={`${tool.className} mt-4 mb-4`}
             />
           ))}
         </div>
