@@ -6,7 +6,7 @@ export default function Navbar() {
   const navigation = ["Projects", "Education", "About", "Contact"];
 
   return (
-    <div className="w-full fixed z-50 clearNav">
+    <div className="w-full fixed z-50 transparentBg">
       <nav className="container relative flex flex-wrap content-center justify-between p-8 mx-auto md:justify-between xl:px-0 h-20">
         <Disclosure>
           {({ open }) => (

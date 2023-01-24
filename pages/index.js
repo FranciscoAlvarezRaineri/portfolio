@@ -55,7 +55,6 @@ export default function Home() {
             ))}
           </div>
         </Container>
-
         <div id="About"></div>
         <Container>
           <SectionTitle subtitle="how I ended up here" title="About me">
