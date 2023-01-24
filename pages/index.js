@@ -78,8 +78,8 @@ export default function Home() {
           ></SectionTitle>
           <ContactForm />
         </Container>
+        <Footer />
       </body>
-      <Footer />
     </>
   );
 }
