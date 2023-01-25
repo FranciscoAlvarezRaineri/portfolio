@@ -4,7 +4,12 @@ import Head from "next/head";
 const CV = () => {
   const [size, setSize] = useState([800, 800]);
   useEffect(() => {
-    setSize([window.innerWidth, window.innerHeight]);
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
   }, []);
 
   return (

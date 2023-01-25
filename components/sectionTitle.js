@@ -9,18 +9,18 @@ export default function SectionTitle(props) {
       }`}
     >
       {props.title && (
-        <h2 className="max-w-2xl mb-3 text-3xl font-bold tracking-wider text-gray-800 lg:text-4xl dark:text-white">
+        <h2 className="max-w-2xl mb-3 text-3xl font-bold tracking-wider text-neutral-800 lg:text-4xl dark:text-white">
           {props.title}
         </h2>
       )}
       {props.subtitle && (
-        <div className="text-sm font-bold text-gray-400 uppercase lg:text-lg">
+        <div className="text-sm font-bold text-neutral-400 uppercase lg:text-lg">
           {props.subtitle}
         </div>
       )}
 
       {props.children && (
-        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300">
+        <p className="max-w-2xl py-4 text-lg leading-normal text-neutral-500 lg:text-xl xl:text-xl dark:text-neutral-300">
           {props.children}
         </p>
       )}
